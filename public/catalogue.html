@@ -32,6 +32,7 @@
   <link rel="stylesheet" href="css/icomoon.css">
   <link rel="stylesheet" href="css/style.css">
   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script src="js/jquery.min.js"></script>
   <script>
     (adsbygoogle = window.adsbygoogle || []).push({
       google_ad_client: "ca-pub-7991134205617314",
@@ -268,7 +269,7 @@
       </div>
       <div class="row ftco-animate">
         <main class="grid" id="catalogue_div">
-         <img src="img/loading.svg" style="display: block;
+          <img src="img/loading.svg" style="display: block;
          margin-left: auto;
          margin-right: auto;
          width: 50%;">
@@ -382,29 +383,16 @@
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
 
-  <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-firestore.js"></script>
-  <script>
-    // Initialize Firebase
-    var config = {
-      apiKey: "AIzaSyDNCNJmrMF42HtbwPFRO-GR5w0X7crMwK8",
-      authDomain: "bookers-cbc43.firebaseapp.com",
-      databaseURL: "https://bookers-cbc43.firebaseio.com",
-      projectId: "bookers-cbc43",
-      storageBucket: "bookers-cbc43.appspot.com",
-      messagingSenderId: "1010756495633"
-    };
-    firebase.initializeApp(config);
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="/__/firebase/7.13.2/firebase-app.js"></script>
 
-    firebase.firestore().enablePersistence()
-      .catch(function (err) {
-        if (err.code == 'failed-precondition') {
-          console.log('Multiple tabs open : ', err);
-        } else if (err.code == 'unimplemented') {
-          console.log('Unimplemented : ', err);
-        }
-      });
-  </script>
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="/__/firebase/7.13.2/firebase-firestore.js"></script>
+
+  <!-- Initialize Firebase -->
+  <script src="/__/firebase/init.js"></script>
+
   <script src="index.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
