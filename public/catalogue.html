@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>BOOKERS' - Where you book your books.</title>
+  <meta charset="utf-8">
+  <link href="images/Bookers.png " rel="icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="The full catalogue of BOOKERS'.">
+  <meta name="keywords"
+    content="bookers, bookers', BOOKERS, BOOKERS’, You book your books, book rental startup, book rental, catalogue">
+  <meta name="author" content="Amrit Dash">
+
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,700,800" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+
+  <link rel="stylesheet" href="css/aos.css">
+
+  <link rel="stylesheet" href="css/ionicons.min.css">
+
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/icomoon.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-7991134205617314",
+      enable_page_level_ads: true
+    });
+  </script>
+
+  <script>
+    jQuery(document.links).filter(function () { return this.hostname != window.location.hostname; }).attr('target', '_blank');
+  </script>
+  <style>
+    @font-face {
+      font-family: raleway;
+      src: url(fonts/raleway.ttf);
+    }
+
+    @font-face {
+      font-family: poiret;
+      src: url(fonts/poiret.ttf);
+    }
+
+    @font-face {
+      font-family: arual;
+      src: url(fonts/arual.ttf);
+    }
+
+    blockquote {
+      font-family: poiret;
+      position: relative;
+      margin: 0.5em;
+      padding: 0.5em 2em 0.5em 3em;
+    }
+
+    /* Thanks: http://callmenick.com/post/styling-blockquotes-with-css-pseudo-classes */
+    blockquote:before {
+      font-family: arual;
+      position: absolute;
+      font-size: 6em;
+      line-height: 1;
+      top: 0;
+      left: 0;
+      content: "\201C";
+    }
+
+    blockquote footer {
+      padding: 0 2em 0 0;
+      text-align: right;
+    }
+
+    blockquote cite:before {
+      content: "\2013";
+    }
+
+    div.raleway {
+      font-family: raleway;
+    }
+
+    div.poiret {
+      font-family: poiret;
+    }
+
+    div.arual {
+      font-family: arual;
+    }
+
+    .grid {
+      display: grid;
+      padding: 12px;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-gap: 20px;
+      align-items: stretch;
+    }
+
+    .grid>article {
+      border: 1px solid #ccc;
+      font-family: raleway;
+      text-align: center;
+      box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+      border-radius: 5px;
+    }
+
+    .grid>article img {
+      max-width: 100%;
+      padding: 10px;
+    }
+
+    .text {
+      padding: 0 20px 20px;
+    }
+
+    .text>button {
+      background: gray;
+      border: 0;
+      color: white;
+      padding: 10px;
+      width: 100%;
+    }
+
+    .flip-card {
+      background-color: transparent;
+      width: 210px;
+      height: 300px;
+      perspective: 1000px;
+      border-radius: 5px;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+    }
+
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 5px;
+    }
+
+    .flip-card-front {
+      background-color: white;
+      color: black;
+      z-index: 2;
+      border-radius: 5px;
+    }
+
+    .flip-card-front>img {
+      max-width: 100%;
+      height: 300px;
+      padding: 7px;
+    }
+
+    .flip-card-back {
+      background-color: grey;
+      color: white;
+      transform: rotateY(180deg);
+      border-radius: 5px;
+      z-index: 1;
+      text-align: center;
+      text-anchor: middle;
+      line-height: 300px;
+      vertical-align: -webkit-baseline-middle;
+    }
+
+    .flip-card-back>h5 {
+      padding: 0 20px 20px;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: normal;
+      color: azure;
+      font-family: raleway;
+    }
+
+    @media screen and (max-width: 830px) {
+      .grid {
+        grid-template-columns: 1fr 1fr 1fr
+      }
+    }
+
+    @media screen and (max-width: 650px) {
+      .grid {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .flip-card {
+        width: 185px;
+        height: 275px;
+      }
+
+      .flip-card-front>img {
+        max-width: 100%;
+        height: 275px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container raleway">
+      <a class="navbar-brand " href="index.html"><img src="images/Bookers.png" class="img-fluid2" height="60" width="60"
+          alt="BOOKERS'">BOOKERS'</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+        aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="catalogue.html" class="nav-link">Catalogue</a></li>
+          <!-- <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- END nav -->
+
+  <section class="home-slider owl-carousel ftco-degree-bg">
+    <div class="slider-item bread-wrap" style="background-image: url('images/bg_1.jpg');"
+      data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row slider-text justify-content-center align-items-center">
+          <div class="col-md-10 col-sm-12 ftco-animate mb-4 text-center">
+            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Catalogue</span></p>
+            <h1 class="mb-3 bread">View our Catalogue</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section ftco-degree-bg">
+    <div class="container">
+      <div class="row justify-content-center mb-5 pb-5">
+        <div class="col-md-7 text-center heading-section ftco-animate">
+          <span class="subheading">Catalogue</span>
+          <h2>Our Complete Stash of Books</h2>
+        </div>
+      </div>
+      <div class="row ftco-animate">
+        <main class="grid" id="catalogue_div">
+         <img src="img/loading.svg" style="display: block;
+         margin-left: auto;
+         margin-right: auto;
+         width: 50%;">
+        </main>
+      </div>
+      <br><br><br>
+      <div class="ftco-animate align-items-center justify-content-center">
+        <h6 style="text-align:center">Still looking for your book? Let us know, and we'll bring it in. <a
+            href="https://assistant.google.com/services/invoke/uid/000000eb55c82911?intent=make%20them%20aware"
+            class="btn-link" target="_blank">Request a book</a>.</h6>
+      </div>
+  </section>
+
+
+
+  <footer class="ftco-footer ftco-bg-dark ftco-section">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">Our Belief</h2>
+            <p>BOOKERS' is a divine place where you can book your books.</p>
+            <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
+              <li class="ftco-animate"><a href="https://www.facebook.com/youbookyourbooks" target="_blank"><span
+                    class="icon-facebook"></span></a></li>
+              <li class="ftco-animate"><a href="https://instagram.com/youbookyourbooks/" target="_blank"><span
+                    class="icon-instagram"></span></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">Quick Links</h2>
+            <ul class="list-unstyled">
+              <!-- <li><a href="#" class="py-2 d-block">Home</a></li>
+                <li><a href="#" class="py-2 d-block">About</a></li>
+                <li><a href="#" class="py-2 d-block">Contact</a></li> -->
+              <li><a href="catalogue.html" target="_blank" class="py-2 d-block">Catalogue</a></li>
+              <li><a
+                  href="https://docs.google.com/document/d/105m-tpR6yMY0XjfvPB5Mg4nC1Tjg9qcpYyILLHr1BOo/edit?usp=sharing"
+                  target="_blank" class="py-2 d-block">Terms of Service</a></li>
+
+              <li><a
+                  href="https://docs.google.com/document/d/1VuwgBCf8-udf9oyFhR9TasYkXznDQqjp_Hp9sGjSI_Y/edit?usp=sharing"
+                  target="_blank" class="py-2 d-block">Return Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">Find Us</h2>
+            <ul class="list-unstyled">
+              <li><a
+                  href="https://www.google.com/maps/place/Bhubaneswar,+Odisha/@20.3008702,85.7504127,12z/data=!3m1!4b1!4m5!3m4!1s0x3a1909d2d5170aa5:0xfc580e2b68b33fa8!8m2!3d20.2960587!4d85.8245398"
+                  target="_blank" class="py-2 d-block">Bhubaneswar</a></li>
+              <li><a href="tel:+918093644586" class="py-2 d-block">+91 8093644586</a></li>
+              <li><a href="mailto:youbookyourbooks@gmail.com" class="py-2 d-block">youbookyourbooks@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">Be a Beta Tester</h2>
+            <p>Join our Beta Program to be amongst the first ones to try out new updates.</p>
+            <div>
+              <a href="https://bit.ly/bookers-beta-program" target="_blank"
+                class="btn btn-block btn-outline-white btn-secondary px-2 py-2"><span class="icon icon-gears"> Join Beta
+                  Program</span></a>
+            </div>
+            <!-- <form action="#" class="subscribe-form">
+                <div class="form-group">
+                  <span class="icon icon-gears"></span>
+                  <input type="text" class="form-control" placeholder="Subscribe">
+                </div>
+              </form> -->
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <br>
+          <br>
+          <br>
+
+          <p>
+            Copyright &copy;
+            <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is edited
+            with
+            ❤️ by <a href="https://about.me/amritdash" target="_blank">Amrit Dash</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+        stroke="#F96D00" /></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-firestore.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDNCNJmrMF42HtbwPFRO-GR5w0X7crMwK8",
+      authDomain: "bookers-cbc43.firebaseapp.com",
+      databaseURL: "https://bookers-cbc43.firebaseio.com",
+      projectId: "bookers-cbc43",
+      storageBucket: "bookers-cbc43.appspot.com",
+      messagingSenderId: "1010756495633"
+    };
+    firebase.initializeApp(config);
+
+    firebase.firestore().enablePersistence()
+      .catch(function (err) {
+        if (err.code == 'failed-precondition') {
+          console.log('Multiple tabs open : ', err);
+          // Multiple tabs open, persistence can only be enabled
+          // in one tab at a a time.
+          // ...
+        } else if (err.code == 'unimplemented') {
+          console.log('Unimplemented : ', err);
+          // The current browser does not support all of the
+          // features required to enable persistence
+          // ...
+        }
+      });
+  </script>
+  <script src="index.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+</body>
+
+</html>

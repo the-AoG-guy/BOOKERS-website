@@ -1,0 +1,11 @@
+{
+  "hosting": {
+	"site": "bookers",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
