@@ -11,8 +11,8 @@ This repo has the files of the hosted website for this startup.
 
 ## Important Links
 
-- ### [Actual Hosted Website](https://bookers.web.app)
-- ### [The Actions on Google Service](https://assistant.google.com/services/invoke/uid/000000eb55c82911)
+- #### [Actual Hosted Website](https://bookers.web.app)
+- #### [The Actions on Google Service](https://assistant.google.com/services/invoke/uid/000000eb55c82911)
  
  
 ## Languages Used
